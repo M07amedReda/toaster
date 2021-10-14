@@ -1,0 +1,39 @@
+{
+    "name": "mohamedreda/toaster",
+    "description": "Toaster package for showing notifications",
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Reda",
+            "email": "mohamed.reda.bot@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MohamedReda\\Toaster\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MohamedReda\\Toaster\\ToasterServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
